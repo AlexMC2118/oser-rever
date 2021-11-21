@@ -1,0 +1,169 @@
+/*
+  author: amorenocamacho.guadalupe@alumnado.fundacionloyola.net
+*/
+*{
+  margin: 0;
+  padding: 0;
+}
+@font-face {  /*Declaracion de la fuente*/
+  font-family: 'CocaCola';
+  font-style: normal;
+  font-weight: normal;
+  src: local('CocaCola'), url('Coca Cola ii.ttf') format('truetype');
+}
+body{
+	background:#C7141A;
+	font-size:12px;
+	color: #333;
+  font-family: sans-serif;
+}
+
+.booklet {
+  width:1200px;
+  height:630px;
+	position:relative;
+	margin:0 auto 10px;
+	-moz-box-shadow:0px 0px 1px #fff;
+	-webkit-box-shadow:0px 0px 1px #fff;
+	box-shadow:0px 0px 1px #fff;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+.booklet .b-wrap-left  {
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-topleft:10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.booklet .b-wrap-right {
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	-moz-border-radius-bottomright: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.booklet .b-counter {
+	bottom:10px;
+	position:absolute;
+	display:block;
+	width:90%;
+	height:20px;
+	border-top:1px solid #ddd;
+	color:#222;
+	text-align:center;
+	font-size:12px;
+	padding:5px 0 0;
+	background:transparent;
+	-moz-box-shadow:0px -1px 1px #fff;
+	-webkit-box-shadow:0px -1px 1px #fff;
+	box-shadow:0px -1px 1px #fff;
+	opacity:0.8;
+}
+.book_wrapper{
+	margin:0 auto;
+	padding-top:50px;
+  width:1270px;
+  height:880px;
+	position:relative;
+	background:transparent url(images/bg.png) no-repeat 9px 27px;
+}
+.book_wrapper h1{
+	color: #C7141A;
+	margin:5px 5px 5px 15px;
+	font-size:36px;
+	padding-bottom:7px;
+  font-family: 'CocaCola', sans-serif;
+  text-align: center;
+}
+.book_wrapper p{
+	font-size:15px;
+	margin:5px 5px 5px 15px;
+}
+.book_wrapper a.article, .book_wrapper a.demo{
+	display:block;
+	width:95px;
+	height:41px;
+	text-decoration:none;
+	outline:none;
+	font-size:16px;
+	color:#555;
+	float:left;
+	line-height:41px;
+	padding-left:47px;
+}
+.book_wrapper a.demo{
+	margin-left:50px;
+}
+.book_wrapper a.article:hover, .book_wrapper a.demo:hover{
+	background-position:50% -41px;
+	color:#13386a;
+}
+#primimg{
+  margin: 0 auto;
+  display: block;
+	width: 80%;
+  max-height: 570px;;
+}
+.book_wrapper img:not(#primimg){
+	margin: 0 auto;
+  display: block;
+	width:300px;
+	padding:4px;
+	border:1px solid #ddd;
+	-moz-box-shadow:1px 1px 1px #fff;
+	-webkit-box-shadow:1px 1px 1px #fff;
+	box-shadow:1px 1px 1px #fff;
+}
+.booklet .b-wrap-right img{
+	border:1px solid #E6E3C2;
+}
+a #next_page_button, a#prev_page_button{
+	display:none;
+	position:absolute;
+	width:41px;
+	height:40px;
+	cursor:pointer;
+	margin-top:-20px;
+	top:50%;
+	background:transparent url(images/buttons.png) no-repeat 0px -40px;
+}
+a #prev_page_button{
+	left:-30px;
+}
+a #next_page_button{
+	right:-30px;
+	background-position:-41px -40px;
+}
+a #next_page_button:hover{
+	background-position:-41px 0px;
+}
+a #prev_page_button:hover{
+	background-position:0px 0px;
+}
+#mybook{
+  display: none;
+}
+nav ul {
+	list-style: none;
+	overflow: hidden;
+}
+nav ul li {
+	font-size: 20px;
+	font-weight: bold;
+	padding-left: 50px;
+}
+nav ul li a {
+	display: block;
+	padding: 25px;
+	color: #000;
+	text-decoration: none;
+	transition:all .3s ease-in-out;
+}
+nav ul li a:hover {
+	color: yellow;
+	transition: transform .3s;
+}
