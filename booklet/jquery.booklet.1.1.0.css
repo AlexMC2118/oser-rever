@@ -42,7 +42,7 @@
 	.booklet .b-p3 {background-image:url("images/shadow.png"); background-repeat:repeat-y; background-position:0 10px;}
 
    	/* Overlay Controls */
-	.booklet .b-overlay      {top:0; position:absolute; height:100%; width:50%;}
+	.booklet .b-overlay      {top:0; position:absolute; height:100%; width:20%;}
 	.booklet .b-overlay-prev {left:0;}
 	.booklet .b-overlay-next {right:0;}
 
