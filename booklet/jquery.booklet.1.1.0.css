@@ -3,13 +3,6 @@
 	.booklet           {width:1200px; height:630px; position:relative; margin:0 auto 10px;}
 	.booklet .b-page  {left:0; top:0; position:absolute; overflow:hidden; padding:0;}
 
-	.booklet .b-pN  {}
-	.booklet .b-p0  {}
-	.booklet .b-p1  {}
-	.booklet .b-p2  {}
-	.booklet .b-p3  {}
-	.booklet .b-p4  {}
-
 	/*.booklet .b-load  {display:none;}*/
 
    	/* Page Wrappers */
@@ -65,7 +58,7 @@
 	body              {z-index:0;}
     .b-menu           {z-index:100;}
     .b-selector       {z-index:100;}
-	.booklet          {z-index:10;}
+		.booklet          {z-index:10;}
     .b-pN             {z-index:10;}
     .b-p0             {z-index:10;}
     .b-p1             {z-index:10;}
