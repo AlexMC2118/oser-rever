@@ -17,12 +17,11 @@ $(function() {
         $bttn_next.show();
         $bttn_prev.show();
         $mybook.show().booklet({
-          name:               null,                            //
-          width:              1200,                             //
-          height:             630,                             //
-          speed:              600,                             //
-          direction:          'LTR',                           //
-                                     //
+          name:               null,                     //
+          width:              1200,                     //
+          height:             630,                      //
+          speed:              600,                      //
+          direction:          'LTR',                    //
           next:               $bttn_next,          			//
           prev:               $bttn_prev,          			//
 
