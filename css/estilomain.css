@@ -12,7 +12,10 @@
   src: local('CocaCola'), url('Coca Cola ii.ttf') format('truetype');
 }
 body{
-	background:#C7141A;
+	background-image: url('images/fondo.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -moz-background-size: 100%;
 	font-size:12px;
 	color: #333;
   font-family: sans-serif;
@@ -103,10 +106,12 @@ body{
 	color:#13386a;
 }
 #primimg{
+  border: 2px solid white;
+  border-radius: 14px;
   margin: 0 auto;
   display: block;
 	width: 80%;
-  max-height: 570px;;
+  max-height: 570px;
 }
 .book_wrapper img:not(#primimg){
 	margin: 0 auto;
