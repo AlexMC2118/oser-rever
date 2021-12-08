@@ -1,6 +1,6 @@
 /* @Booklet
 ----------------------------------------*/
-	.booklet           {width:1200px; height:630px; position:relative; margin:0 auto;}
+	.booklet           {width:63.058vw; height:67.74vh; position:relative; margin:0 auto;}
 	.booklet .b-page  {left:0; top:0; position:absolute; overflow:hidden; padding:0;}
 
 	/*.booklet .b-load  {display:none;}*/
@@ -35,7 +35,7 @@
 	.booklet .b-p3 {background-image:url("images/shadow.png"); background-repeat:repeat-y; background-position:0 10px;}
 
    	/* Overlay Controls */
-	.booklet .b-overlay      {top:0; position:absolute; height:100%; width:20%;}
+	.booklet .b-overlay      {top:0; position:absolute; height:100%; width:10%;}
 	.booklet .b-overlay-prev {left:0;}
 	.booklet .b-overlay-next {right:0;}
 

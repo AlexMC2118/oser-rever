@@ -11,13 +11,21 @@
   font-weight: normal;
   src: local('CocaCola'), url('Coca Cola ii.ttf') format('truetype');
 }
+.subtitulo{
+  color: #C7141A;
+  font-size: 2em;
+  font-family: 'CocaCola', sans-serif;
+}
+.resaltadas{
+  color: #C7141A;
+}
 #primimg{
   border: 2px solid white;
   border-radius: 14px;
   margin: 0 auto;
   display: block;
 	width: 80%;
-  max-height: 570px;
+  max-height: 61.29vh;
 }
 body{
 	background-image: url('images/fondo.jpg');
@@ -30,8 +38,8 @@ body{
 }
 /*EFECTO LIBRO___________________________________*/
 .booklet {
-  width:1200px;
-  height:630px;
+  width:63.058vw;
+  height:67.74vh;
 	position:relative;
 	margin:0 auto;
 	-moz-box-shadow:0px 0px 1px #fff;
@@ -58,16 +66,16 @@ body{
 	border-bottom-right-radius: 10px;
 }
 .booklet .b-counter {
-	bottom:10px;
+	bottom: 0;
 	position:absolute;
 	display:block;
 	width:90%;
-	height:20px;
+	height: auto;
 	border-top:1px solid #ddd;
 	color:#222;
 	text-align:center;
 	font-size:12px;
-	padding:5px 0 0;
+	padding:5px;
 	background:transparent;
 	-moz-box-shadow:0px -1px 1px #fff;
 	-webkit-box-shadow:0px -1px 1px #fff;
@@ -77,19 +85,23 @@ body{
 .book_wrapper{
 	margin:0 auto;
 	padding-top:50px;
-  width:1270px;
-  height:880px;
+  width:66.7367vw;
+  height:94.6236vh;
 	position:relative;
-	background:transparent url(images/bg.png) no-repeat 9px 27px;
+	background:transparent url(images/bg.png) 9px 27px;
+  background-size: 100% 77.74%;
+  background-repeat: no-repeat;
+  -moz-background-size: 100%;
 }
 .book_wrapper h1{
 	color: #C7141A;
-	font-size:36px;
+	font-size:3em;
   font-family: 'CocaCola', sans-serif;
   text-align: center;
 }
 .book_wrapper p{
-	font-size:15px;
+	font-size:1.2em;
+  padding: 10px;
   text-align: justify;
 }
 .book_wrapper a.article, .book_wrapper a.demo{
@@ -111,37 +123,19 @@ body{
 	background-position:50% -41px;
 	color:#13386a;
 }
-#primimg{
-  border: 2px solid white;
-  border-radius: 14px;
-  margin: 0 auto;
-  display: block;
-	width: 80%;
-  max-height: 570px;
-}
-.book_wrapper img:not(#primimg){
-	margin: 0 auto;
-  display: block;
-	width:80%;
-	border:2px solid #ddd;
-	-moz-box-shadow:1px 1px 1px #fff;
-	-webkit-box-shadow:1px 1px 1px #fff;
-	box-shadow:1px 1px 1px #fff;
-}
+ #maniqui{
+   float: left;
+ 	 width: 40%;
+   border-bottom: 2px solid gray;
+   margin-right: 10px;
+ }
+ #pag6{
+   padding: 30px;
+ }
 .booklet .b-wrap-right img{
 	border:1px solid #E6E3C2;
 }
 /*Efecto para pagina siguiente y anterior (Libro)*/
-a #next_page_button, a#prev_page_button{
-	display:none;
-	position:absolute;
-	width:41px;
-	height:40px;
-	cursor:pointer;
-	margin-top:-20px;
-	top:50%;
-	background:transparent url(images/buttons.png) no-repeat 0px -40px;
-}
 a #prev_page_button{
 	left:-30px;
 }
@@ -173,24 +167,28 @@ nav ul {
 	overflow: hidden;
 }
 nav ul li {
-	font-size: 20px;
+	font-size: 1.8em;
 	font-weight: bold;
 	padding-left: 50px;
 }
-nav ul li a {
+a {
 	display: block;
 	padding: 25px;
 	color: #000;
 	text-decoration: none;
 	transition:all .3s ease-in-out;
 }
-nav ul li a:hover {
+a:hover {
 	color: yellow;
 	transition: transform .3s;
 }
 /*EFECTO CUADRO IMAGEN___________________________________*/
 .efecto {
-	width: 400px; height: 300px; margin: 70px auto;
+  width: 66.6666667%;
+  height: 32.2589vh;
+	max-width: 400px;
+  max-height: 300px;
+  margin: 30px auto 70px auto;
 	perspective: 1000px;
 }
 .efecto a {
@@ -236,4 +234,13 @@ nav ul li a:hover {
 	opacity: 1;
 	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
 	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+@media screen and (max-width: 1366px){
+  nav ul li {
+  	font-size: 1.5em;
+  }
+  .book_wrapper p{
+  	font-size:1em;
+  }
 }

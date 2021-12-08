@@ -1,3 +1,5 @@
+//author Alejandro Moreno Camacho
+'use strict';
 $(function() {
   var $mybook 		= $('#mybook');
   var $bttn_next		= $('#next_page_button');
@@ -6,7 +8,12 @@ $(function() {
   var $mybook_images	= $mybook.find('img');
   var cnt_images		= $mybook_images.length;
   var loaded			= 0;
-
+  //Calculo para los viewport width y height, saber altura y anchura de la pantalla del usuario
+  var wt = window.innerWidth;
+  var ht = window.innerHeight;
+  wt = (wt*63.058)/100;
+  ht = ((ht-10)*67.74)/100;
+  //_________________________________________________________________________________________
   $mybook_images.each(function(){
     var $img 	= $(this);
     var source	= $img.attr('src');
@@ -18,8 +25,8 @@ $(function() {
         $bttn_prev.show();
         $mybook.show().booklet({
           name:               null,                     //
-          width:              1200,                     //
-          height:             630,                      //
+          width:              wt,                       //
+          height:             ht,                       //
           speed:              600,                      //
           direction:          'LTR',                    //
           next:               $bttn_next,          			//
