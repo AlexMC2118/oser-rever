@@ -152,6 +152,9 @@ a #prev_page_button:hover{
 #mybook{
   display: none;
 }
+.pure{
+  display: none;
+}
 /*EFECTO NAVEGADOR___________________________________*/
 nav{
   display: block;
@@ -235,11 +238,35 @@ a:hover {
 	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
 	transform: rotateX(0) translateZ(-60px) scale(0.85);
 }
+/*MEDIAS QUERYS _______________________________________*/
 @media screen and (max-width: 1440px){
   nav ul li {
   	font-size: 1.5em;
   }
   .book_wrapper p{
   	font-size:1em;
+  }
+}
+@media screen and (max-width: 800px){
+  body {
+    background-color: #C7141A;
+    background-image: none;
+  }
+  #primimg{
+  	width: 80%;
+    max-height: 81.29vh;
+  }
+  .b-wrap-left{
+    margin: 0 auto;
+    border-radius: 10px;
+  }
+  .b-wrap-right{
+    border-radius: 10px;
+  }
+  .book_wrapper{
+  	background:none;
+  }
+  .pure{
+    display: block;
   }
 }
