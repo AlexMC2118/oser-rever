@@ -16,6 +16,7 @@ $(function() {
   if(window.innerWidth <=1100){ht+=12;}
   if(window.innerWidth <=900){ht+=8;}
   if(window.innerWidth <=800){wt*=2; ht+=100;}
+  if(window.innerHeight <=400){ht+=5;}
   //_________________________________________________________________________________________
   $mybook_images.each(function(){
     var $img 	= $(this);
