@@ -13,6 +13,8 @@ $(function() {
   var ht = window.innerHeight;
   wt = (wt*63.058)/100;
   ht = ((ht-10)*67.74)/100;
+  if(window.innerWidth <=1100){ht+=12;}
+  if(window.innerWidth <=900){ht+=8;}
   if(window.innerWidth <=800){wt*=2; ht+=100;}
   //_________________________________________________________________________________________
   $mybook_images.each(function(){
