@@ -19,7 +19,7 @@
 .resaltadas{
   color: #C7141A;
 }
-#primimg{
+#primimg{ /*Imagen de la primera pagina*/
   border: 2px solid white;
   border-radius: 14px;
   margin: 0 auto;
@@ -37,7 +37,7 @@ body{
   font-family: sans-serif;
 }
 /*EFECTO LIBRO___________________________________*/
-.booklet {
+.booklet { /*Libro*/
   width:63.058vw;
   height:67.74vh;
 	position:relative;
@@ -49,7 +49,7 @@ body{
 	-webkit-border-radius:10px;
 	border-radius:10px;
 }
-.booklet .b-wrap-left  {
+.booklet .b-wrap-left  { /*Paginas Impares*/
 	-webkit-border-top-left-radius: 10px;
 	-webkit-border-bottom-left-radius: 10px;
 	-moz-border-radius-topleft:10px;
@@ -57,7 +57,7 @@ body{
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
 }
-.booklet .b-wrap-right {
+.booklet .b-wrap-right { /*Paginas pares*/
 	-webkit-border-top-right-radius: 10px;
 	-webkit-border-bottom-right-radius: 10px;
 	-moz-border-radius-topright: 10px;
@@ -65,7 +65,7 @@ body{
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 }
-.booklet .b-counter {
+.booklet .b-counter { /*Contador de pagina*/
 	bottom: 0;
 	position:absolute;
 	display:block;
@@ -82,7 +82,7 @@ body{
 	box-shadow:0px -1px 1px #fff;
 	opacity:0.8;
 }
-.book_wrapper{
+.book_wrapper{ /*Contenedor de libro*/
 	margin:0 auto;
 	padding-top:50px;
   width:66.7367vw;
@@ -123,15 +123,6 @@ body{
 	background-position:50% -41px;
 	color:#13386a;
 }
- #maniqui{
-   float: left;
- 	 width: 40%;
-   border-bottom: 2px solid gray;
-   margin-right: 10px;
- }
- #pag6{
-   padding: 30px;
- }
 .booklet .b-wrap-right img{
 	border:1px solid #E6E3C2;
 }
@@ -152,8 +143,24 @@ a #prev_page_button:hover{
 #mybook{
   display: none;
 }
-.pure{
+/*EFECTOS VARIOS_________________________________*/
+.flechas{
   display: none;
+}
+#maniqui{
+  float: left;
+  width: 40%;
+  border-bottom: 2px solid gray;
+  margin-right: 10px;
+}
+#pag6{
+  padding: 30px;
+}
+.video{
+  width: 80%;
+  height: 30vh;
+  display: block;
+  margin: 15px auto;
 }
 /*EFECTO NAVEGADOR___________________________________*/
 nav{
@@ -187,6 +194,22 @@ nav a:hover {
 	color: yellow;
 	transition: transform .3s;
 }
+/*Efecto para boton iniciar*/
+#iniciar{
+  margin: 30px;
+  transition:all .3s ease-in-out;
+}
+#iniciar:hover{
+  color: red;
+}
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
 /*EFECTO CUADRO IMAGEN___________________________________*/
 .efecto {
   width: 66.6666667%;
@@ -202,30 +225,25 @@ nav a:hover {
 		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
 		url("images/pagina2.png");
 	background-size: 0, cover;
-	/*Otorgamos espacio para el 3D*/
-	transform-style: preserve-3d;
+	transform-style: preserve-3d; /*Otorgamos espacio para el 3D*/
 	transition: all 0.5s;
 }
 .efecto:hover a {transform: rotateX(80deg); transform-origin: bottom;}
-/*Capa de debajo */
-.efecto a:after {
+.efecto a:after {/*Capa de debajo */
 	content: ''; position: absolute; left: 0; bottom: 0;
 	width: 100%; height: 36px;
 	background: inherit; background-size: cover, cover;
 	background-position: bottom;
-  /*movimiento de la imagen*/
-	transform: rotateX(90deg); transform-origin: bottom;
+	transform: rotateX(90deg); transform-origin: bottom; /*movimiento de la imagen*/
 }
 .efecto a span {
 	color: white; text-transform: uppercase;
 	position: absolute; top: 100%; left: 0; width: 100%;
 	font: bold 12px/36px Montserrat; text-align: center;
-  /*Colocación del texto con una rotación algo menor*/
-  transform: rotateX(-89.99deg); transform-origin: top;
+  transform: rotateX(-89.99deg); transform-origin: top; /*Colocación del texto con una rotación algo menor*/
 	z-index: 1;
 }
-/*Efecto de la sombra de debajo del cuadro*/
-.efecto a:before {
+.efecto a:before {/*Efecto de la sombra de debajo del cuadro*/
 	content: ''; position: absolute; top: 0; left: 0;
 	width: 100%; height: 100%;
 	background: rgba(0, 0, 0, 0.5);
@@ -240,11 +258,28 @@ nav a:hover {
 	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
 	transform: rotateX(0) translateZ(-60px) scale(0.85);
 }
-.video{
-  width: 80%;
-  height: 30vh;
-  display: block;
-  margin: 15px auto;
+/*JUEGO________________________________________________*/
+.recogida, .salida, .salida2{
+  overflow: hidden;
+  max-height: 60vh;
+}
+.recogida button, .salida button, .salida2 button{
+  float: left;
+  width: 31%;
+}
+.salida2{
+  display: none;
+}
+.salida button, .recogida button{
+  transition:all .3s ease-in-out;
+}
+.salida button:hover, .salida2 button:hover{
+  color: lightgreen;
+  background-color: green;
+}
+.recogida button:hover{
+  color: red;
+  background-color: #C7141A;
 }
 /*MEDIAS QUERYS _______________________________________*/
 @media screen and (max-width: 1440px){
@@ -320,10 +355,35 @@ nav a:hover {
   .book_wrapper{
   	background:none;
   }
-  .pure{
+  .flechas{
     display: block;
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .pure img, .pure-atras img{
+    width: 25px;
+    height: auto;
   }
   .book_wrapper p{
   	font-size:0.8em;
+  }
+  .booklet .b-wrap-left  .b-counter  {left:auto;}
+	.booklet .b-wrap-right .b-counter {right:auto;}
+  .booklet .b-counter { width: 90%;}
+  .salida2{
+    display: block;
+  }
+  .recogida button, .salida button, .salida2 button{
+    float: left;
+    width: auto;
+    font-size: 0.8em;
+    padding: 0.5em 1em;
+  }
+  .salida2{
+    position: absolute;
+    top: 45vh;
   }
 }
