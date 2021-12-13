@@ -265,7 +265,7 @@ button {
 }
 .recogida button, .salida button, .salida2 button{
   float: left;
-  width: 31%;
+  width: 30%;
 }
 .salida2{
   display: none;
