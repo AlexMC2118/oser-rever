@@ -161,6 +161,8 @@ a #prev_page_button:hover{
   height: 30vh;
   display: block;
   margin: 15px auto;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 /*EFECTO NAVEGADOR___________________________________*/
 nav{
@@ -281,6 +283,16 @@ button {
   color: red;
   background-color: #C7141A;
 }
+.enviarjuego{
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.especialtitle{
+  display: none;
+}
 /*MEDIAS QUERYS _______________________________________*/
 @media screen and (max-width: 1440px){
   nav ul li {
@@ -363,7 +375,14 @@ button {
     right: 0;
     text-align: center;
   }
-  .pure img, .pure-atras img{
+  .especialtitle{
+    display: block;
+    position: absolute;
+    top: 35vh;
+    left: 0;
+    right: 0;
+  }
+  .pure img, .pure-atras img, .pure2 img{
     width: 25px;
     height: auto;
   }
