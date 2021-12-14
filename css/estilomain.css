@@ -269,9 +269,6 @@ button {
   float: left;
   width: 30%;
 }
-.salida2{
-  display: none;
-}
 .salida button, .recogida button{
   transition:all .3s ease-in-out;
 }
@@ -290,7 +287,7 @@ button {
   right: 0;
   text-align: center;
 }
-.especialtitle{
+.especialtitle, .resultadofinal2, .salida2{
   display: none;
 }
 /*MEDIAS QUERYS _______________________________________*/
@@ -349,6 +346,9 @@ button {
   }
 }
 @media screen and (max-width: 800px){
+  .resultadofinal2{
+    display: block;
+  }
   body {
     background-color: #C7141A;
     background-image: none;
